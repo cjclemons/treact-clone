@@ -171,12 +171,13 @@ nav {
   margin: 0;
   padding: 10px 32px;
   margin-top: 2px;
+  width: auto;
+  border: none;
   border-radius: 9999px;
   color: #fff;
   background-color: #6415ff;
   line-height: 1.5;
-  border: none;
-  width: auto;
+  display: block;
   transition: all 300ms ease;
 }
 .nav__link--primary:hover {
