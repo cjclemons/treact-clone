@@ -1523,3 +1523,11 @@ ANIMATIONS
     transform: translateX(0%);
   }
 }
+
+.from__left--hidden {
+  transform: translateX(-100%);
+}
+/* hide right sources off screen */
+.from__right--hidden {
+  transform: translateX(100%);
+}
