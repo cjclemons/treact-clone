@@ -118,6 +118,14 @@ button {
   background-color: rgba(80, 17, 204);
 }
 
+.slide__from__left {
+  animation: transition__right 400ms ease;
+}
+
+.slide__from__right {
+  animation: transition__left 400ms ease;
+}
+
 /* 
 
 NAVIGATION BAR 
@@ -166,6 +174,7 @@ nav {
   font-weight: 600;
   letter-spacing: 0.35px;
   border-bottom: 2px solid transparent;
+  cursor: not-allowed;
 }
 .nav__link--primary {
   margin: 0;
@@ -1031,6 +1040,7 @@ footer {
   font-weight: 500;
   color: #f7fafc;
   line-height: 1.5;
+  cursor: not-allowed;
 }
 .footer__column--link:nth-child(2) {
   margin-top: 24px;
@@ -1487,5 +1497,29 @@ footer {
     font-size: 14px;
     text-align: center;
     line-height: 1.5;
+  }
+}
+
+/* 
+
+ANIMATIONS 
+
+*/
+
+@keyframes transition__right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes transition__left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
